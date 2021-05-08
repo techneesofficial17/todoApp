@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Ubuntu;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #2CD1F6;
+}
+
+.main {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+  width: 100vw;
+}
+
+.main .box-input {
+  background: #8217D5;
+  width: 60vw;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 1rem;
+  border-radius: 9px;
+}
+
+.main .box-input h2 {
+  color: black;
+  font-family: Ubuntu;
+  margin-bottom: 1rem;
+}
+
+.main .box-input .innerBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.main .box-input .innerBox #todoField {
+  margin: 0 auto;
+  width: calc(100% - 20rem);
+  padding: 5px 2px;
+  font-size: 18px;
+  background: #AFCEDF;
+  border: 0;
+  color: black;
+}
+
+.main .box-input .innerBox #todoField:focus {
+  outline: none;
+}
+
+.main .box-input .innerBox .add {
+  margin-right: 15px;
+  padding: 2px 10px;
+  font-size: 18px;
+  top: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.main .box-input .innerBox .add:hover {
+  background: #1DFD8B;
+}
+
+.main .box-input .innerBox #editTodo {
+  visibility: hidden;
+}
+
+.main .box {
+  padding: 1rem 5vh;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90vw;
+}
+
+.main .box .todo-itself {
+  background: #CA5BF3;
+  padding: 15px 20px;
+  border-radius: 9px;
+  margin: .2rem;
+  position: relative;
+  width: 80vw;
+}
+
+.main .box .todo-itself .inputed {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.main .box .todo-itself .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .box .todo-itself #num {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: -15px;
+  background: #CA5BF3;
+  border-radius: 50%;
+  font-size: 18px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.main .box .todo-itself #num::after {
+  content: '.';
+  position: absolute;
+  right: 3px;
+}
+
+.main .box .todo-itself .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main .box .todo-itself .buttons .button {
+  padding: 2px 10px;
+  background: #AFCEDF;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
+.main .box .todo-itself .buttons #edit {
+  background: #2CD1F6;
+  border: 2px solid #2CD1F6;
+}
+
+.main .box .todo-itself .buttons #edit:hover {
+  border: 2px solid black;
+}
+
+.main .box .todo-itself .buttons #done {
+  background: #e13154;
+  border: 2px solid #e13154;
+}
+
+.main .box .todo-itself .buttons #done:hover {
+  border: 2px solid black;
+}
+
+.main .box .todo-itself .buttons #view {
+  background: #1DFD8B;
+  border: 2px solid #1DFD8B;
+}
+
+.main .box .todo-itself .buttons #view:hover {
+  border: 2px solid black;
+}
+/*# sourceMappingURL=main.css.map */
